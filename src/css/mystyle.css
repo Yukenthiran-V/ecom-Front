@@ -1,0 +1,119 @@
+@import './Footer.css';
+
+.container{
+    max-width: 1300px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* *{
+    font-family:Verdana;
+} */
+div{
+    padding: 0;
+    margin: 0;
+}
+button:hover{
+   transform: scale(1.05);
+}
+
+/* .view-btn:hover{
+  background-color: rgb(255, 200, 19) !important;
+} */
+.product-card-button{
+   display: flex;
+   justify-content:space-between;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    /* z-index: calc(var(--ui-zindex-overlay) + 1); */
+    will-change: opacity;
+    transition: opacity .2s ease-out;
+    /* transition: opacity var(--ui-motion-duration-short) var(--ui-motion-easing-entering); */
+    background-color: #000;
+    /* background-color: rgba(0,0,0,1); */
+    opacity: 0.8;
+    visibility: visible;
+    pointer-events: none;
+    }/* Spinner Styling */
+.spinner {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    margin-top: -40px; 
+    margin-left: -40px; 
+    
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%;
+    animation: spin 1s linear infinite; 
+  }
+ 
+.model-box{
+  position: absolute;
+  z-index: 1000;
+  top:40%;
+  left: 40%;
+  width: 400px;
+  opacity: 1;
+}
+.view-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.offcanvas-start{
+  width: 275px !important;
+}
+.side-nav-link li{
+ padding: 10px;
+}
+  .mobile-search-btn{
+    display: none;
+  }
+
+  .categories-card{
+    width:"15.2%";
+  }
+
+@media only screen  and  (max-width: 480px) {
+  .container{
+     padding: 20px !important ;
+  }
+  .view-btn{
+    flex-direction: column;
+  }
+  .categories-card{
+    width: 45% !important;
+  }
+  .view-btn button{
+    width: 50%;
+    
+  }
+  .mobile-search-btn{
+    display: block;
+  }
+.mobile-product-image{
+  height: auto !important;
+}
+.product-small-img{
+  display: none !important;
+}
+.product-title{
+margin-top: 20px;
+}
+
+}
+
+@media (min-width: 480px) and (max-width: 1200px) and (orientation: landscape) {
+   .categories-card{
+    width:30% !important;
+  }
+}
