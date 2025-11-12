@@ -1,1 +1,0 @@
-import{r as t,j as s}from"./index-Catw9q3l.js";function r(){const[e,n]=t.useState(!1);return s.jsxs(s.Fragment,{children:[s.jsx("button",{onClick:()=>n(!0),children:"Load Component"}),e&&s.jsx(t.Suspense,{fallback:s.jsx("p",{children:"Loading..."})})]})}export{r as default};
